@@ -81,7 +81,6 @@ hero.on('message',async message => {
 		if(!devs.includes(message.author.id)) return message.channel.send(`${emojis.wrong}, **أنت لست من ادارة السيرفر لأستخدام هذا الأمر.**`);
 		message.channel.send(`${emojis.yes}, **جارى اعادة تشغيل البوت.**`);
 		hero.destroy();
-		hero.login(process.env.ROYALE_TOKEN);
 	} else if(args[0].toLowerCase() === `${prefix}deletetickets`) {
 		let iq = 0;
 		for(let q = 0; q < tchannels.length; q++) {
@@ -98,4 +97,4 @@ hero.on('message',async message => {
 	}
 });
 
-client.login(process.env.BOT);
+client.login(process.env.BOT_TOKEN);
