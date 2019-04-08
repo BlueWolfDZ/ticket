@@ -1,8 +1,8 @@
 const Discord  = require('discord.js');
 const hero     = new Discord.Client();
 const prefix   = "!";
-const category = "553406362269515776";
-const devs     = ["380307890235506698", "test"];
+const category = "551869731947151390";
+const devs     = ["441584713799303183", "441584713799303183"];
 let mtickets   = true;
 let tchannels  = [];
 let current    = 0;
